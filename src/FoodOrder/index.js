@@ -29,10 +29,13 @@ class FoodOrder extends Component {
     this.setState({ items: myDinner });
   };
 
+  buyDinnerFaster = async () => {};
+
   async componentDidMount() {
     const t0 = performance.now();
 
     await this.buyDinner();
+    //await this.buyDinnerFaster();
 
     const t1 = performance.now();
 
